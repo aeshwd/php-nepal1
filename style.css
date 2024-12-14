@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #8fd3f4;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form input:focus, .form textarea:focus {
+    border-color: #84fab0;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.button {
+    text-align: center;
+}
+
+.button .send {
+    display: inline-block;
+    position: relative;
+}
+
+.button .send button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-left: 40px;
+}
+
+.button .send button:hover {
+    background:black;
+}
+
+.button span {
+    display: none;
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .form input, .form textarea {
+        padding-left: 35px;
+    }
+
+    .form i {
+        font-size: 14px;
+    }
+
+    .button .send button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
